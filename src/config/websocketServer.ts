@@ -1,5 +1,5 @@
 import WebSocket, { WebSocketServer } from 'ws';
-import { handleMessage } from '../controllers/messageController';
+import { handleMessage } from '../controllers/messageService';
 
 export function startWebSocketServer(): void {
   const wss = new WebSocketServer({ port: 8080 });
